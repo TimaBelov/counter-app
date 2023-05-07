@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Счётчик</title>
-
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <p class="counter">0</p>
-    <button class="increment-btn">+1 Бассейн</button>
-    <button class="reset-btn">Сбросить</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body class="body">
+    <section class="counter">
+      <p class="counter__value"></p>
+      <button id="addOnePoolBtn" class="counter__add-button" data-pools="1">
+        +1 Бассейн
+      </button>
+      <button id="resetBtn" class="counter__reset-button">Сбросить</button>
+    </section>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

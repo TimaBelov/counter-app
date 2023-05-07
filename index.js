@@ -1,16 +1,19 @@
-let counter = 0;
+const inc_btn = document.getElementById('addOnePoolBtn');
+const res_btn = document.getElementById('resetBtn');
+const counterText = document.querySelector('.counter__value');
 
-let inc_btn = document.querySelector('.increment-btn');
-let res_btn = document.querySelector('.reset-btn');
-let counterText = document.querySelector('.counter');
+const COUNTER_INITIAL_VALUE = 0;
+
+let counter = COUNTER_INITIAL_VALUE;
+counterText.innerText = counter;
 
 inc_btn.addEventListener('click',function() {
-    counter = counter + 1;
+    counter = counter + parseInt(inc_btn.dataset.pools);
     counterText.innerText = counter;
 });
 
 res_btn.addEventListener('click',function(){
-    counter = 0;
+    counter = COUNTER_INITIAL_VALUE;
     counterText.innerText = counter;
 });
 
